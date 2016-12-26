@@ -13,8 +13,8 @@ require("style!css!sass!applicationStyles")
 
 ReactDOM.render(
   <div>
-    <ComponentOne/>
-    <ComponentTwo/>
+    <ComponentOne count={25} name={"Aleksandr"}/>
+    <ComponentTwo count={50} name={"David"} age={40}/>
 	</div>,
 	document.getElementById('app')
 );

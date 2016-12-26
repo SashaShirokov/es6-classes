@@ -3,9 +3,19 @@ import React from "react";
 var ComponentOne = React.createClass({
 	getInitialState: function() {
 		return {
-			count: 0,
-			name: "Aleksandr"
+			count: this.props.count,
+			name: this.props.name
 		};
+	},
+	getDefaultProps: function() {
+		return {
+			count: 8,
+			name: "Anonymous"
+		};
+	},
+	propTypes: {
+		count: React.PropTypes.number,
+		name: React.PropTypes.string
 	},
 	render: function() {
 		return(
